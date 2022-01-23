@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-sm" *ngFor="let c of countries; let i = index">
+  <div style="border-radius: 8px;"
+  (mouseenter)="displayColors(i)"
+  (mouseleave)="defaultColors(i)"
+  id="Country{{i}}">
+  <p>Name: {{c.name}}</p>
+  <p>Official Language: {{c.lang}}</p>
+  <p>Current President: {{c.president}}</p>
+  <p>Official Flag:</p>
+  <img src="{{c.flagURL}}" />
+</div>
+</div>
+</div>
